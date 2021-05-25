@@ -27,13 +27,15 @@ struct SideMenuHeaderView: View {
                     .clipped()
                     .frame(width: 64, height: 64)
                     .clipShape(/*@START_MENU_TOKEN@*/Circle()/*@END_MENU_TOKEN@*/)
-                    .padding(.bottom, 16)
+                    .padding(.top, 10)
+                    .padding(.bottom, 6)
+                   
                 
                 Text("Janitha Prashad")
                     .font(.system(size: 24, weight: .semibold))
                 Text("katueknda@icloud.com")
                     .font(.system(size: 14, weight: .semibold))
-                    .padding(.bottom, 10)
+                    .padding(.bottom)
                 
                 HStack(spacing: 12){
                     HStack(spacing: 4){

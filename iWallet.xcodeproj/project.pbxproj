@@ -10,11 +10,18 @@
 		06059B4D265C08D100028A38 /* iWalletApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06059B4C265C08D100028A38 /* iWalletApp.swift */; };
 		06059B51265C08D200028A38 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06059B50265C08D200028A38 /* Assets.xcassets */; };
 		06059B54265C08D200028A38 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06059B53265C08D200028A38 /* Preview Assets.xcassets */; };
-		06059B5D265C0BEA00028A38 /* HomePageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06059B5C265C0BEA00028A38 /* HomePageView.swift */; };
+		06059B5D265C0BEA00028A38 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06059B5C265C0BEA00028A38 /* MainView.swift */; };
 		06059B60265C133B00028A38 /* SideMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06059B5F265C133B00028A38 /* SideMenuView.swift */; };
 		06059B62265C136700028A38 /* SideMenuHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06059B61265C136700028A38 /* SideMenuHeaderView.swift */; };
 		06059B64265C138200028A38 /* SideMenuOptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06059B63265C138200028A38 /* SideMenuOptionView.swift */; };
 		06059B66265C32C500028A38 /* SideMenuViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06059B65265C32C500028A38 /* SideMenuViewModel.swift */; };
+		06552E0E265CD338005CD127 /* LoaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06552E0D265CD338005CD127 /* LoaderView.swift */; };
+		06552E11265CD85A005CD127 /* HomeItemsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06552E10265CD85A005CD127 /* HomeItemsView.swift */; };
+		06552E14265CDC11005CD127 /* SpendingMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06552E13265CDC11005CD127 /* SpendingMainView.swift */; };
+		06552E16265CF70D005CD127 /* SpendingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06552E15265CF70D005CD127 /* SpendingView.swift */; };
+		06552E18265CF74F005CD127 /* TransactionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06552E17265CF74F005CD127 /* TransactionView.swift */; };
+		06552E1A265CF765005CD127 /* Categoriesview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06552E19265CF765005CD127 /* Categoriesview.swift */; };
+		06552E1C265CF797005CD127 /* AnalysisView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06552E1B265CF797005CD127 /* AnalysisView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,11 +30,18 @@
 		06059B50265C08D200028A38 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		06059B53265C08D200028A38 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		06059B55265C08D200028A38 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		06059B5C265C0BEA00028A38 /* HomePageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageView.swift; sourceTree = "<group>"; };
+		06059B5C265C0BEA00028A38 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		06059B5F265C133B00028A38 /* SideMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuView.swift; sourceTree = "<group>"; };
 		06059B61265C136700028A38 /* SideMenuHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuHeaderView.swift; sourceTree = "<group>"; };
 		06059B63265C138200028A38 /* SideMenuOptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuOptionView.swift; sourceTree = "<group>"; };
 		06059B65265C32C500028A38 /* SideMenuViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuViewModel.swift; sourceTree = "<group>"; };
+		06552E0D265CD338005CD127 /* LoaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoaderView.swift; sourceTree = "<group>"; };
+		06552E10265CD85A005CD127 /* HomeItemsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeItemsView.swift; sourceTree = "<group>"; };
+		06552E13265CDC11005CD127 /* SpendingMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpendingMainView.swift; sourceTree = "<group>"; };
+		06552E15265CF70D005CD127 /* SpendingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpendingView.swift; sourceTree = "<group>"; };
+		06552E17265CF74F005CD127 /* TransactionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionView.swift; sourceTree = "<group>"; };
+		06552E19265CF765005CD127 /* Categoriesview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Categoriesview.swift; sourceTree = "<group>"; };
+		06552E1B265CF797005CD127 /* AnalysisView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalysisView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,8 +94,11 @@
 		06059B5B265C09E500028A38 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				06552E12265CDBFB005CD127 /* Spending */,
+				06552E0F265CD836005CD127 /* HomePage */,
 				06059B5E265C131C00028A38 /* SideMenu */,
-				06059B5C265C0BEA00028A38 /* HomePageView.swift */,
+				06059B5C265C0BEA00028A38 /* MainView.swift */,
+				06552E0D265CD338005CD127 /* LoaderView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -95,6 +112,26 @@
 				06059B65265C32C500028A38 /* SideMenuViewModel.swift */,
 			);
 			path = SideMenu;
+			sourceTree = "<group>";
+		};
+		06552E0F265CD836005CD127 /* HomePage */ = {
+			isa = PBXGroup;
+			children = (
+				06552E10265CD85A005CD127 /* HomeItemsView.swift */,
+			);
+			path = HomePage;
+			sourceTree = "<group>";
+		};
+		06552E12265CDBFB005CD127 /* Spending */ = {
+			isa = PBXGroup;
+			children = (
+				06552E13265CDC11005CD127 /* SpendingMainView.swift */,
+				06552E15265CF70D005CD127 /* SpendingView.swift */,
+				06552E17265CF74F005CD127 /* TransactionView.swift */,
+				06552E19265CF765005CD127 /* Categoriesview.swift */,
+				06552E1B265CF797005CD127 /* AnalysisView.swift */,
+			);
+			path = Spending;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -166,9 +203,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				06552E1A265CF765005CD127 /* Categoriesview.swift in Sources */,
+				06552E16265CF70D005CD127 /* SpendingView.swift in Sources */,
 				06059B62265C136700028A38 /* SideMenuHeaderView.swift in Sources */,
 				06059B60265C133B00028A38 /* SideMenuView.swift in Sources */,
-				06059B5D265C0BEA00028A38 /* HomePageView.swift in Sources */,
+				06059B5D265C0BEA00028A38 /* MainView.swift in Sources */,
+				06552E14265CDC11005CD127 /* SpendingMainView.swift in Sources */,
+				06552E18265CF74F005CD127 /* TransactionView.swift in Sources */,
+				06552E0E265CD338005CD127 /* LoaderView.swift in Sources */,
+				06552E11265CD85A005CD127 /* HomeItemsView.swift in Sources */,
+				06552E1C265CF797005CD127 /* AnalysisView.swift in Sources */,
 				06059B64265C138200028A38 /* SideMenuOptionView.swift in Sources */,
 				06059B66265C32C500028A38 /* SideMenuViewModel.swift in Sources */,
 				06059B4D265C08D100028A38 /* iWalletApp.swift in Sources */,

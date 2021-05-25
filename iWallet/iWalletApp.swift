@@ -11,7 +11,9 @@ import SwiftUI
 struct iWalletApp: App {
     var body: some Scene {
         WindowGroup {
-            HomePageView()
+            SpendingMainView()
+            
         }
+        
     }
 }
