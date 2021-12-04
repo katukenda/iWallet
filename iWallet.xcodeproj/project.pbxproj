@@ -22,6 +22,10 @@
 		06552E18265CF74F005CD127 /* TransactionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06552E17265CF74F005CD127 /* TransactionView.swift */; };
 		06552E1A265CF765005CD127 /* Categoriesview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06552E19265CF765005CD127 /* Categoriesview.swift */; };
 		06552E1C265CF797005CD127 /* AnalysisView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06552E1B265CF797005CD127 /* AnalysisView.swift */; };
+		06552E1E265DF7DE005CD127 /* NewTransactionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06552E1D265DF7DE005CD127 /* NewTransactionView.swift */; };
+		068D56D22660EE1000E7E89A /* AddNewCategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 068D56D12660EE1000E7E89A /* AddNewCategoryView.swift */; };
+		068D56D5266123C100E7E89A /* IWalletDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 068D56D3266123C100E7E89A /* IWalletDataModel.xcdatamodeld */; };
+		068D56D92661251A00E7E89A /* CoreDataManagers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 068D56D82661251A00E7E89A /* CoreDataManagers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +46,10 @@
 		06552E17265CF74F005CD127 /* TransactionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionView.swift; sourceTree = "<group>"; };
 		06552E19265CF765005CD127 /* Categoriesview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Categoriesview.swift; sourceTree = "<group>"; };
 		06552E1B265CF797005CD127 /* AnalysisView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalysisView.swift; sourceTree = "<group>"; };
+		06552E1D265DF7DE005CD127 /* NewTransactionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTransactionView.swift; sourceTree = "<group>"; };
+		068D56D12660EE1000E7E89A /* AddNewCategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewCategoryView.swift; sourceTree = "<group>"; };
+		068D56D4266123C100E7E89A /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
+		068D56D82661251A00E7E89A /* CoreDataManagers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManagers.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +82,8 @@
 		06059B4B265C08D100028A38 /* iWallet */ = {
 			isa = PBXGroup;
 			children = (
+				068D56D7266124F000E7E89A /* Managers */,
+				068D56D6266123CB00E7E89A /* Data */,
 				06059B5B265C09E500028A38 /* Components */,
 				06059B4C265C08D100028A38 /* iWalletApp.swift */,
 				06059B50265C08D200028A38 /* Assets.xcassets */,
@@ -125,13 +135,55 @@
 		06552E12265CDBFB005CD127 /* Spending */ = {
 			isa = PBXGroup;
 			children = (
-				06552E13265CDC11005CD127 /* SpendingMainView.swift */,
-				06552E15265CF70D005CD127 /* SpendingView.swift */,
-				06552E17265CF74F005CD127 /* TransactionView.swift */,
-				06552E19265CF765005CD127 /* Categoriesview.swift */,
+				068D56DC26614D1900E7E89A /* Transaction */,
+				068D56DB26614CF800E7E89A /* Spending */,
+				068D56DA2661478F00E7E89A /* Category */,
 				06552E1B265CF797005CD127 /* AnalysisView.swift */,
 			);
 			path = Spending;
+			sourceTree = "<group>";
+		};
+		068D56D6266123CB00E7E89A /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				068D56D3266123C100E7E89A /* IWalletDataModel.xcdatamodeld */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		068D56D7266124F000E7E89A /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				068D56D82661251A00E7E89A /* CoreDataManagers.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		068D56DA2661478F00E7E89A /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				06552E19265CF765005CD127 /* Categoriesview.swift */,
+				068D56D12660EE1000E7E89A /* AddNewCategoryView.swift */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		068D56DB26614CF800E7E89A /* Spending */ = {
+			isa = PBXGroup;
+			children = (
+				06552E13265CDC11005CD127 /* SpendingMainView.swift */,
+				06552E15265CF70D005CD127 /* SpendingView.swift */,
+			);
+			path = Spending;
+			sourceTree = "<group>";
+		};
+		068D56DC26614D1900E7E89A /* Transaction */ = {
+			isa = PBXGroup;
+			children = (
+				06552E1D265DF7DE005CD127 /* NewTransactionView.swift */,
+				06552E17265CF74F005CD127 /* TransactionView.swift */,
+			);
+			path = Transaction;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -211,10 +263,14 @@
 				06552E14265CDC11005CD127 /* SpendingMainView.swift in Sources */,
 				06552E18265CF74F005CD127 /* TransactionView.swift in Sources */,
 				06552E0E265CD338005CD127 /* LoaderView.swift in Sources */,
+				068D56D92661251A00E7E89A /* CoreDataManagers.swift in Sources */,
 				06552E11265CD85A005CD127 /* HomeItemsView.swift in Sources */,
+				068D56D5266123C100E7E89A /* IWalletDataModel.xcdatamodeld in Sources */,
 				06552E1C265CF797005CD127 /* AnalysisView.swift in Sources */,
+				06552E1E265DF7DE005CD127 /* NewTransactionView.swift in Sources */,
 				06059B64265C138200028A38 /* SideMenuOptionView.swift in Sources */,
 				06059B66265C32C500028A38 /* SideMenuViewModel.swift in Sources */,
+				068D56D22660EE1000E7E89A /* AddNewCategoryView.swift in Sources */,
 				06059B4D265C08D100028A38 /* iWalletApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -404,6 +460,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		068D56D3266123C100E7E89A /* IWalletDataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				068D56D4266123C100E7E89A /* DataModel.xcdatamodel */,
+			);
+			currentVersion = 068D56D4266123C100E7E89A /* DataModel.xcdatamodel */;
+			path = IWalletDataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 06059B41265C08D100028A38 /* Project object */;
 }

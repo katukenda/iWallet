@@ -23,7 +23,7 @@ struct SpendingView: View {
                         .font(.system(size: 25))
                 })
                 
-                ButtonTest(buttonLabel: "May")
+                ButtonText(buttonLabel: "May")
                 
                 Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
                    Image(systemName: "arrowshape.turn.up.right.fill")
@@ -63,12 +63,22 @@ struct SpendingView: View {
                 
             Spacer()
             HStack(spacing:50){
-                Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
-                    ButtonTest(buttonLabel: "+ Income")
-                })
-                Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
-                    ButtonTest(buttonLabel: "+ Expense")
-                })
+                
+                NavigationLink(
+                    destination: NewTransactionView(),
+                    label: {
+                        ButtonText(buttonLabel: "+ Income")
+                    }
+                )
+                NavigationLink(
+                    destination: NewTransactionView(),
+                    label: {
+                        ButtonText(buttonLabel: "+ Expense")
+                    }
+                )
+               
+               
+               
             }
             .padding(.bottom, 100)
             
@@ -128,7 +138,7 @@ struct PriceCategoryView: View {
     }
 }
 
-struct ButtonTest: View {
+struct ButtonText: View {
     
     var buttonLabel: String
     
